@@ -10,12 +10,12 @@ pipeline {
                 sh 'mvn clean compile'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-		sh 'mvn test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         echo 'Testing..'
+		// sh 'mvn test'
+        //     }
+        // }
         stage('Package') {
             steps {
                 echo 'Deploying....'
